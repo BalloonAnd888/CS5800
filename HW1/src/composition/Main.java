@@ -13,12 +13,7 @@ class File {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public void print() {
-//        System.out.println("This is a File");
         System.out.println(name);
     }
 }
@@ -30,32 +25,23 @@ class Folder {
 
     Folder(String name) {
         this.name = name;
-        this.subFolders = new ArrayList<Folder>();
         this.files = new ArrayList<File>();
+        this.subFolders = new ArrayList<Folder>();
     }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public ArrayList<Folder> getSubFolders() {
+        return subFolders;
     }
 
-    public void addSubFolder(Folder subFolder) {
-        subFolders.add(subFolder);
-    }
-
-    public void addFile(File file) {
-        files.add(file);
-    }
-
-    public void removeSubFolder(String name) {
-        subFolders.removeIf(folder -> folder.getName().equals(name));
+    public ArrayList<File> getFiles() {
+        return files;
     }
 
     public void print() {
-//        System.out.println("This is a Folder");
         System.out.println(name);
 
         for (File file : files) {
@@ -70,42 +56,59 @@ class Folder {
 
 public class Main {
     public static void main(String[] args) {
-//        System.out.println("Composition");
         Folder root = new Folder("php_demo1");
         Folder sourceFiles = new Folder("Source Files");
-        root.addSubFolder(sourceFiles);
+        root.getSubFolders().add(sourceFiles);
+
         Folder phalcon = new Folder(".phalcon");
+        sourceFiles.getSubFolders().add(phalcon);
+
         Folder app = new Folder("app");
-        sourceFiles.addSubFolder(phalcon);
-        sourceFiles.addSubFolder(app);
-        app.addSubFolder(new Folder("config"));
-        app.addSubFolder(new Folder("controllers"));
-        app.addSubFolder(new Folder("library"));
-        app.addSubFolder(new Folder("migrations"));
-        app.addSubFolder(new Folder("models"));
-        app.addSubFolder(new Folder("views"));
+        sourceFiles.getSubFolders().add(app);
+
+        Folder config = new Folder("config");
+        Folder controllers = new Folder("controllers");
+        Folder library = new Folder("library");
+        Folder migrations = new Folder("migrations");
+        Folder models = new Folder("models");
+        Folder views = new Folder("views");
+
+        app.getSubFolders().add(config);
+        app.getSubFolders().add(controllers);
+        app.getSubFolders().add(library);
+        app.getSubFolders().add(migrations);
+        app.getSubFolders().add(models);
+        app.getSubFolders().add(views);
 
         Folder cache = new Folder("cache");
-        sourceFiles.addSubFolder(cache);
+        sourceFiles.getSubFolders().add(cache);
 
         Folder publicFolder = new Folder("public");
-        publicFolder.addFile(new File(".htaccess"));
-        publicFolder.addFile(new File(".htrouter.php"));
-        publicFolder.addFile(new File(".index.html"));
-        sourceFiles.addSubFolder(publicFolder);
+        sourceFiles.getSubFolders().add(publicFolder);
+
+        File htaccess = new File(".htaccess");
+        publicFolder.getFiles().add(htaccess);
+
+        File htrouter = new File(".htrouter.php");
+        publicFolder.getFiles().add(htrouter);
+
+        File index = new File("index.html");
+        publicFolder.getFiles().add(index);
 
         Folder includePath = new Folder("Include Path");
-        root.addSubFolder(includePath);
+        root.getSubFolders().add(includePath);
+
         File remoteFiles = new File("Remote Files");
-        root.addFile(remoteFiles);
+        root.getFiles().add(remoteFiles);
 
-//        root.print();
-
-        root.removeSubFolder("app");
-        System.out.println("Removed folder app");
         root.print();
 
+        System.out.println("\nRemoved folder app");
+        sourceFiles.getSubFolders().remove(app);
+        root.print();
 
-
+        System.out.println("\nRemoved folder public");
+        sourceFiles.getSubFolders().remove(publicFolder);
+        root.print();
     }
 }
