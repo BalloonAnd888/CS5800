@@ -74,8 +74,12 @@ public class Main {
 
         Instructor instructor1 = new Instructor("John", "Doe", "123");
         Textbook textbook1 = new Textbook("John", "Doe", "123");
-        Course course = new Course("CS5800", instructor1, textbook1);
+        Course course1 = new Course("CS5800", instructor1, textbook1);
+        course1.print();
 
-        course.print();
+        Instructor instructor2 = new Instructor("Jane", "Doe", "456");
+        Textbook textbook2 = new Textbook("Jane", "Doe", "456");
+        Course course2 = new Course("CS5800", instructor2, textbook2);
+        course2.print();
     }
 }
