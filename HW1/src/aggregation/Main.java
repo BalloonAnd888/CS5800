@@ -13,7 +13,7 @@ public class Main {
         courses[1] = new Course("CS2230", new Instructor("John", "Oates", "1-367"), new Textbook("Python Crash Course", "Eric Matthes", "No Starch Press"));
 
         courses[2] = new Course("CS4840", new Instructor("William", "McCarthy", "4-001"), new Textbook("Ray Tracing", "Kevin Suffern", "CRC Press"));
-        
+
         for (Course course : courses) {
             course.print();
         }

@@ -1,58 +1,7 @@
 package composition;
 
-import java.util.ArrayList;
-
-class File {
-    private String name;
-
-    File(String name) {
-        this.name = name;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void print() {
-        System.out.println(name);
-    }
-}
-
-class Folder {
-    private String name;
-    private ArrayList<Folder> subFolders;
-    private ArrayList<File> files;
-
-    Folder(String name) {
-        this.name = name;
-        this.files = new ArrayList<File>();
-        this.subFolders = new ArrayList<Folder>();
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public ArrayList<Folder> getSubFolders() {
-        return subFolders;
-    }
-
-    public ArrayList<File> getFiles() {
-        return files;
-    }
-
-    public void print() {
-        System.out.println(name);
-
-        for (File file : files) {
-            file.print();
-        }
-
-        for (Folder subFolder : subFolders) {
-            subFolder.print();
-        }
-    }
-}
+import composition.file.File;
+import composition.folder.Folder;
 
 public class Main {
     public static void main(String[] args) {
