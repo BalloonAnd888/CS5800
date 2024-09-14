@@ -4,22 +4,15 @@ import polymorphism.ship.Ship;
 import polymorphism.cargoship.CargoShip;
 import polymorphism.cruiseship.CruiseShip;
 
-import java.util.ArrayList;
-
 public class Main {
     public static void main(String[] args) {
-        Ship ship = new Ship("Bob", "1996");
+        Ship[] ships = new Ship[3];
 
-        Ship cruiseShip = new CruiseShip("Bob", "1996", 5);
+        ships[0] = new Ship("Blue Horizon", "1995");
+        ships[1] = new CruiseShip("Paradise Voyager", "2005", 3000);
+        ships[2] = new CargoShip("Titan Freight", "2000", 10000);
 
-        Ship cargoShip = new CargoShip("Bob", "1996", 1);
-
-        ArrayList<Ship> ships = new ArrayList<>();
-        ships.add(ship);
-        ships.add(cruiseShip);
-        ships.add(cargoShip);
-
-        for(Ship s: ships) {
+        for (Ship s : ships) {
             s.print();
         }
     }
