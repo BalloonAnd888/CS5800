@@ -1,85 +1,21 @@
 package aggregation;
 
-class Instructor {
-    private String firstName;
-    private String lastName;
-    private String officeNumber;
-
-    Instructor(String firstName, String lastName, String officeNumber) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.officeNumber = officeNumber;
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public String getOfficeNumber() {
-        return officeNumber;
-    }
-}
-
-class Textbook {
-    private String title;
-    private String author;
-    private String publisher;
-
-    Textbook(String title, String author, String publisher) {
-        this.title = title;
-        this.author = author;
-        this.publisher = publisher;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public String getAuthor() {
-        return author;
-    }
-
-    public String getPublisher() {
-        return publisher;
-    }
-}
-
-class Course {
-    private String name;
-    private Instructor instructor;
-    private Textbook textbook;
-
-    Course(String name, Instructor instructor, Textbook textbook) {
-        this.name = name;
-        this.instructor = instructor;
-        this.textbook = textbook;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void print() {
-        System.out.println("Course Name: " + getName() + " Instructor: " + instructor.getFirstName() + " " + instructor.getLastName() + " Office: " + instructor.getOfficeNumber() + " Textbook: " + textbook.getTitle());
-    }
-}
+import aggregation.course.Course;
+import aggregation.textbook.Textbook;
+import aggregation.instructor.Instructor;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Aggregation");
+        Course[] courses = new Course[3];
 
-        Instructor instructor1 = new Instructor("John", "Doe", "123");
-        Textbook textbook1 = new Textbook("John", "Doe", "123");
-        Course course1 = new Course("CS5800", instructor1, textbook1);
-        course1.print();
+        courses[0] = new Course("CS5800", new Instructor("Nima", "Davarpanah", "3-2636"), new Textbook("Clean Code", "Robert Cecil Martin", "Pearson"));
 
-        Instructor instructor2 = new Instructor("Jane", "Doe", "456");
-        Textbook textbook2 = new Textbook("Jane", "Doe", "456");
-        Course course2 = new Course("CS5800", instructor2, textbook2);
-        course2.print();
+        courses[1] = new Course("CS2230", new Instructor("John", "Oates", "1-367"), new Textbook("Python Crash Course", "Eric Matthes", "No Starch Press"));
+
+        courses[2] = new Course("CS4840", new Instructor("William", "McCarthy", "4-001"), new Textbook("Ray Tracing", "Kevin Suffern", "CRC Press"));
+        
+        for (Course course : courses) {
+            course.print();
+        }
     }
 }
