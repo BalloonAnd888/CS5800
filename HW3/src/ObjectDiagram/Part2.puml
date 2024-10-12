@@ -1,0 +1,34 @@
+@startuml
+'https://plantuml.com/object-diagram
+
+object "<u>titanic:Ship</u>" as ts {
+    shipName = "Titanic"
+    yearBuilt = "March31st,1909"
+}
+
+object "<u>MVGemini:CruiseShip</u>" as mc {
+    shipName = "MVGemini"
+    yearBuilt = "May30th,1991"
+    cargoCapacityInTonnage = 100
+}
+
+object "<u>EverGiven:CargoShip</u>" as ec {
+    shipName = "EverGiven"
+    yearBuilt = "September25th,2018"
+    maxNumberPassengers = 220940
+}
+
+
+'object London
+'object Washington
+'object Berlin
+'object NewYork
+'
+'map CapitalCity {
+' UK *-> London
+' USA *--> Washington
+' Germany *---> Berlin
+'}
+'
+'NewYork --> CapitalCity::USA
+@enduml
