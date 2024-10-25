@@ -1,0 +1,24 @@
+@startuml
+'https://plantuml.com/object-diagram
+
+'After step 5. Before adding second instructor and book
+object "<u>c1Instructor:Instructor</u>" as ci {
+    firstName = "Nima"
+    lastName = "Davarpanah"
+    officeNumber = "3-2636"
+}
+
+object "<u>c1Textbook:Textbook</u>" as ct {
+    title = "CleanCode:A Handbook of Agile Software Craftsmanship"
+    author = "Robert Cecil Martin"
+    publisher = "Pearson"
+}
+
+object "<u>c1:Course</u>" as c {
+    name = "CS5800 - Advanced Software Engineering"
+}
+
+c o-- ci
+c o-- ct
+
+@enduml
