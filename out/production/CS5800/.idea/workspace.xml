@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ddfe2ea0-e2af-4607-b525-04414fefd3f3" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="UML Class" />
+        <option value="UML Object" />
+        <option value="Python Script" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2lxtg1EKJvZvY0c7Yka3eRTwZox" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Driver.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;DefaultPlantUmlFileTemplate&quot;: &quot;UML Object&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;JUnit.PizzaBuilderTest.testAddToppings.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PizzaBuilderTest.testEat.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PizzaBuilderTest.testSetChain.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PizzaBuilderTest.testSetSize.executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;HW4&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/alau2/Documents/CS5800/HW4&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\alau2\Documents\CS5800\HW4" />
+      <recent name="C:\Users\alau2\Documents\CS5800\HW3\src\Part1" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.PizzaBuilderTest.testAddToppings (1)">
+    <configuration name="PizzaBuilderTest.testAddToppings (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CS5800" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="HW4.Builder.src.test.java.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="HW4.Builder.src.test.java" />
+      <option name="MAIN_CLASS_NAME" value="HW4.Builder.src.test.java.PizzaBuilderTest" />
+      <option name="METHOD_NAME" value="testAddToppings" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PizzaBuilderTest.testAddToppings" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Builder" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PizzaBuilderTest" />
+      <option name="METHOD_NAME" value="testAddToppings" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PizzaBuilderTest.testEat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Builder" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PizzaBuilderTest" />
+      <option name="METHOD_NAME" value="testEat" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PizzaBuilderTest.testSetChain" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Builder" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PizzaBuilderTest" />
+      <option name="METHOD_NAME" value="testSetChain" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PizzaBuilderTest.testSetSize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Builder" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PizzaBuilderTest" />
+      <option name="METHOD_NAME" value="testSetSize" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.PizzaBuilderTest.testAddToppings (1)" />
+        <item itemvalue="JUnit.PizzaBuilderTest.testEat" />
+        <item itemvalue="JUnit.PizzaBuilderTest.testAddToppings" />
+        <item itemvalue="JUnit.PizzaBuilderTest.testSetChain" />
+        <item itemvalue="JUnit.PizzaBuilderTest.testSetSize" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ddfe2ea0-e2af-4607-b525-04414fefd3f3" name="Changes" comment="" />
+      <created>1726133663599</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1726133663599</updated>
+      <workItem from="1726133664389" duration="2244000" />
+      <workItem from="1726178522608" duration="1808000" />
+      <workItem from="1726181806665" duration="3381000" />
+      <workItem from="1726200901259" duration="13033000" />
+      <workItem from="1726277175750" duration="5296000" />
+      <workItem from="1728675846384" duration="382000" />
+      <workItem from="1728676343559" duration="108000" />
+      <workItem from="1728708674409" duration="124000" />
+      <workItem from="1728708804125" duration="74000" />
+      <workItem from="1728708900976" duration="7733000" />
+      <workItem from="1728795188329" duration="4726000" />
+      <workItem from="1728869073985" duration="696000" />
+      <workItem from="1729829172533" duration="9047000" />
+      <workItem from="1729917802279" duration="9315000" />
+      <workItem from="1730005740014" duration="8582000" />
+      <workItem from="1730069363476" duration="3965000" />
+      <workItem from="1730075299002" duration="472000" />
+      <workItem from="1730075812405" duration="79000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
