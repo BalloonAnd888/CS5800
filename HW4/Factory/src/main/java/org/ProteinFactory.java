@@ -43,3 +43,4 @@ public class ProteinFactory extends MacronutrientFactory{
         return availableOptions.get(new Random().nextInt(availableOptions.size()));
     }
 }
+
