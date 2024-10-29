@@ -7,8 +7,10 @@ import java.util.Random;
 public class ProteinFactory extends MacronutrientFactory{
     private static ProteinFactory instance;
     private String[] options = {"Fish", "Chicken", "Beef", "Tofu"};
+    private String[] paleo = {"Fish", "Chicken", "Beef"};
+    private String[] vegan = {"Beef", "Tofu"};
 
-    private ProteinFactory() {}
+    public ProteinFactory() {}
 
     public static ProteinFactory getInstance() {
         if (instance == null) {
@@ -20,12 +22,24 @@ public class ProteinFactory extends MacronutrientFactory{
     @Override
     public String getOption(String dietPlan) {
         List<String> availableOptions = new ArrayList<>();
-        for (String option : options) {
-            if (!("Vegan".equals(dietPlan) && ("Fish".equals(option) || "Chicken".equals(option) || "Beef".equals(option))) &&
-                    !("Paleo".equals(dietPlan) && "Tofu".equals(option))) {
-                availableOptions.add(option);
-            }
+
+        switch (dietPlan) {
+            case "No Restriction":
+                availableOptions.addAll(List.of(options));
+                break;
+            case "Vegan":
+                availableOptions.addAll(List.of(vegan));
+                break;
+            case "Paleo":
+                availableOptions.addAll(List.of(paleo));
+                break;
+            case "Nut Allergy":
+                availableOptions.addAll(List.of(options));
+                break;
+            default:
+                System.out.println("Invalid diet plan");
         }
+
         return availableOptions.get(new Random().nextInt(availableOptions.size()));
     }
 }

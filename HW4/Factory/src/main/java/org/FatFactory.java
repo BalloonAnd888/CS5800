@@ -8,8 +8,11 @@ import java.util.Random;
 public class FatFactory extends MacronutrientFactory{
     private static FatFactory instance;
     private String[] options = {"Avocado", "Sour cream", "Tuna", "Peanuts"};
+    private String[] paleo = {"Avocado", "Tuna", "Peanuts"};
+    private String[] vegan = {"Avocado", "Peanuts"};
+    private String[] nutAllergy = {"Avocado", "Sour cream", "Tuna"};
 
-    private FatFactory() {}
+    public FatFactory() {}
 
     public static FatFactory getInstance() {
         if (instance == null) {
@@ -21,13 +24,24 @@ public class FatFactory extends MacronutrientFactory{
     @Override
     public String getOption(String dietPlan) {
         List<String> availableOptions = new ArrayList<>();
-        for (String option : options) {
-            if (!("Vegan".equals(dietPlan) && "Sour cream".equals(option)) &&
-                    !("Paleo".equals(dietPlan) && "Sour cream".equals(option)) &&
-                    !("Nut Allergy".equals(dietPlan) && "Peanuts".equals(option))) {
-                availableOptions.add(option);
-            }
+
+        switch (dietPlan) {
+            case "No Restriction":
+                availableOptions.addAll(List.of(options));
+                break;
+            case "Vegan":
+                availableOptions.addAll(List.of(vegan));
+                break;
+            case "Paleo":
+                availableOptions.addAll(List.of(paleo));
+                break;
+            case "Nut Allergy":
+                availableOptions.addAll(List.of(nutAllergy));
+                break;
+            default:
+                System.out.println("Invalid diet plan");
         }
+
         return availableOptions.get(new Random().nextInt(availableOptions.size()));
     }
 }

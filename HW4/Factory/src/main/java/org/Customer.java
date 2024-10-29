@@ -24,6 +24,18 @@ public class Customer {
         this.fat = fatFactory.getOption(dietPlan);
     }
 
+    public String getCarb() {
+        return carb;
+    }
+
+    public String getProtein() {
+        return protein;
+    }
+
+    public String getFat() {
+        return fat;
+    }
+
     @Override
     public String toString() {
         return "Customer: " + name + " Diet Plan: " + dietPlan + " Meal: [Carb: " + carb + ", Protein: " + protein + ", Fat: " + fat + "]";

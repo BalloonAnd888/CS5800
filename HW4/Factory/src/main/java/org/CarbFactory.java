@@ -6,9 +6,13 @@ import java.util.Random;
 
 public class CarbFactory extends MacronutrientFactory{
     private String[] options = {"Cheese", "Bread", "Lentils", "Pistachio"};
+    private String[] paleo = {"Pistachio"};
+    private String[] vegan = {"Bread", "Lentils", "Pistachio"};
+    private String[] nutAllergy = {"Cheese", "Bread", "Lentils"};
+
     private static CarbFactory instance;
 
-    private CarbFactory() {}
+    public CarbFactory() {}
 
     public static CarbFactory getInstance() {
         if(instance == null) {
@@ -20,11 +24,22 @@ public class CarbFactory extends MacronutrientFactory{
     @Override
     public String getOption(String dietPlan) {
         List<String> availableOptions = new ArrayList<>();
-        for(String option : options) {
-            if (!("Paleo".equals(dietPlan) && ("Cheese".equals(option) || "Bread".equals(option) || "Lentils".equals(option))) &&
-                !("Nut Allergy".equals(dietPlan) && "Pistachio".equals(option))) {
-            availableOptions.add(option);
-            }
+
+        switch (dietPlan) {
+            case "No Restriction":
+                availableOptions.addAll(List.of(options));
+                break;
+            case "Paleo":
+                availableOptions.addAll(List.of(paleo));
+                break;
+            case "Vegan":
+                availableOptions.addAll(List.of(vegan));
+                break;
+            case "Nut Allergy":
+                availableOptions.addAll(List.of(nutAllergy));
+                break;
+            default:
+                System.out.println("Invalid diet plan");
         }
 
         return availableOptions.get(new Random().nextInt(availableOptions.size()));

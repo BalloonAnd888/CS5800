@@ -8,7 +8,7 @@ public class Driver {
                 new Customer("Wilbert", "Nut Allergy"),
                 new Customer("Stanley", "Vegan"),
                 new Customer("Alan", "Paleo"),
-                new Customer("Ben", "Nut Allergy"),
+                new Customer("Trisha", "Nut Allergy"),
         };
 
         for (Customer customer : customers) {
