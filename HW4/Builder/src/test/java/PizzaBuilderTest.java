@@ -1,8 +1,8 @@
 package HW4.Builder.src.test.java;
 
 import org.junit.jupiter.api.Test;
-import org.pizzabuilder.PizzaBuilder;
-import org.pizza.Pizza;
+import HW4.Builder.src.main.java.org.pizza.Pizza;
+import HW4.Builder.src.main.java.org.pizzabuilder.PizzaBuilder;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
