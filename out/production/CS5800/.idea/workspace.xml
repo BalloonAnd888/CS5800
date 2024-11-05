@@ -5,19 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ddfe2ea0-e2af-4607-b525-04414fefd3f3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/HW4/Factory/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW4/Factory/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW4/Factory/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW4/Factory/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW4/Factory/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW4/Factory/src/main/java/org/CarbFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW4/Factory/src/main/java/org/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW4/Factory/src/main/java/org/Driver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW4/Factory/src/main/java/org/FactoryCreator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW4/Factory/src/main/java/org/FatFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW4/Factory/src/main/java/org/MacronutrientFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW4/Factory/src/main/java/org/ProteinFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW4/Factory/src/test/java/CustomerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW5/src/main/java/org/Driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW5/src/main/java/org/food/Burger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW5/src/main/java/org/food/Food.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW5/src/main/java/org/loyalty/Loyalty.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW5/src/main/java/org/order/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW5/src/main/java/org/toppings/Bacon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW5/src/main/java/org/toppings/Cheese.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW5/src/test/java/FoodTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW5/src/test/java/LoyaltyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW5/src/test/java/OrderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CS5800/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CS5800/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,116 +49,129 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Driver.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;DefaultPlantUmlFileTemplate&quot;: &quot;UML Object&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;JUnit.PizzaBuilderTest.testAddToppings (1).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PizzaBuilderTest.testAddToppings.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PizzaBuilderTest.testEat (1).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PizzaBuilderTest.testEat.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PizzaBuilderTest.testSetChain (1).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PizzaBuilderTest.testSetChain.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PizzaBuilderTest.testSetSize (1).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PizzaBuilderTest.testSetSize.executor&quot;: &quot;Run&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;HW4&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/alau2/Documents/CS5800/HW4&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Driver.executor": "Run",
+    "Application.Main.executor": "Run",
+    "DefaultPlantUmlFileTemplate": "UML Object",
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.CarbFactoryTest.testGetInstance.executor": "Run",
+    "JUnit.CarbFactoryTest.testGetOption.executor": "Run",
+    "JUnit.CustomerTest.testCreateMeal.executor": "Run",
+    "JUnit.FatFactoryTest.testGetInstance.executor": "Run",
+    "JUnit.FatFactoryTest.testGetOption.executor": "Run",
+    "JUnit.PizzaBuilderTest.testAddToppings (1).executor": "Run",
+    "JUnit.PizzaBuilderTest.testAddToppings.executor": "Run",
+    "JUnit.PizzaBuilderTest.testEat (1).executor": "Run",
+    "JUnit.PizzaBuilderTest.testEat.executor": "Run",
+    "JUnit.PizzaBuilderTest.testSetChain (1).executor": "Run",
+    "JUnit.PizzaBuilderTest.testSetChain.executor": "Run",
+    "JUnit.PizzaBuilderTest.testSetSize (1).executor": "Run",
+    "JUnit.PizzaBuilderTest.testSetSize.executor": "Run",
+    "JUnit.ProteinFactoryTest.testGetInstance.executor": "Run",
+    "JUnit.ProteinFactoryTest.testGetOption.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "HW5",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/alau2/Documents/CS5800",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\alau2\Documents\CS5800\HW4" />
       <recent name="C:\Users\alau2\Documents\CS5800\HW3\src\Part1" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="PizzaBuilderTest.testAddToppings (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.FoodTest.testBaseFoodCost">
+    <configuration name="FatFactoryTest.testGetInstance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS5800" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HW4.Builder.src.test.java.*" />
+          <option name="PATTERN" value="HW4.Factory.src.test.java.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="HW4.Builder.src.test.java" />
-      <option name="MAIN_CLASS_NAME" value="HW4.Builder.src.test.java.PizzaBuilderTest" />
-      <option name="METHOD_NAME" value="testAddToppings" />
+      <option name="PACKAGE_NAME" value="HW4.Factory.src.test.java" />
+      <option name="MAIN_CLASS_NAME" value="HW4.Factory.src.test.java.FatFactoryTest" />
+      <option name="METHOD_NAME" value="testGetInstance" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PizzaBuilderTest.testEat (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FatFactoryTest.testGetOption" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS5800" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HW4.Builder.src.test.java.*" />
+          <option name="PATTERN" value="HW4.Factory.src.test.java.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="HW4.Builder.src.test.java" />
-      <option name="MAIN_CLASS_NAME" value="HW4.Builder.src.test.java.PizzaBuilderTest" />
-      <option name="METHOD_NAME" value="testEat" />
+      <option name="PACKAGE_NAME" value="HW4.Factory.src.test.java" />
+      <option name="MAIN_CLASS_NAME" value="HW4.Factory.src.test.java.FatFactoryTest" />
+      <option name="METHOD_NAME" value="testGetOption" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PizzaBuilderTest.testEat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Builder" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PizzaBuilderTest" />
-      <option name="METHOD_NAME" value="testEat" />
+    <configuration name="FoodTest.testBaseFoodCost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CS5800" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="HW5.src.test.java.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="HW5.src.test.java" />
+      <option name="MAIN_CLASS_NAME" value="HW5.src.test.java.FoodTest" />
+      <option name="METHOD_NAME" value="testBaseFoodCost" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PizzaBuilderTest.testSetChain (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProteinFactoryTest.testGetInstance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS5800" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HW4.Builder.src.test.java.*" />
+          <option name="PATTERN" value="HW4.Factory.src.test.java.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="HW4.Builder.src.test.java" />
-      <option name="MAIN_CLASS_NAME" value="HW4.Builder.src.test.java.PizzaBuilderTest" />
-      <option name="METHOD_NAME" value="testSetChain" />
+      <option name="PACKAGE_NAME" value="HW4.Factory.src.test.java" />
+      <option name="MAIN_CLASS_NAME" value="HW4.Factory.src.test.java.ProteinFactoryTest" />
+      <option name="METHOD_NAME" value="testGetInstance" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PizzaBuilderTest.testSetSize (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProteinFactoryTest.testGetOption" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS5800" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HW4.Builder.src.test.java.*" />
+          <option name="PATTERN" value="HW4.Factory.src.test.java.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="HW4.Builder.src.test.java" />
-      <option name="MAIN_CLASS_NAME" value="HW4.Builder.src.test.java.PizzaBuilderTest" />
-      <option name="METHOD_NAME" value="testSetSize" />
+      <option name="PACKAGE_NAME" value="HW4.Factory.src.test.java" />
+      <option name="MAIN_CLASS_NAME" value="HW4.Factory.src.test.java.ProteinFactoryTest" />
+      <option name="METHOD_NAME" value="testGetOption" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -165,19 +179,19 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PizzaBuilderTest.testEat (1)" />
-        <item itemvalue="JUnit.PizzaBuilderTest.testSetChain (1)" />
-        <item itemvalue="JUnit.PizzaBuilderTest.testSetSize (1)" />
-        <item itemvalue="JUnit.PizzaBuilderTest.testAddToppings (1)" />
-        <item itemvalue="JUnit.PizzaBuilderTest.testEat" />
+        <item itemvalue="JUnit.FoodTest.testBaseFoodCost" />
+        <item itemvalue="JUnit.ProteinFactoryTest.testGetInstance" />
+        <item itemvalue="JUnit.ProteinFactoryTest.testGetOption" />
+        <item itemvalue="JUnit.FatFactoryTest.testGetInstance" />
+        <item itemvalue="JUnit.FatFactoryTest.testGetOption" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23726.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23726.103" />
       </set>
     </attachedChunks>
   </component>
@@ -208,7 +222,10 @@
       <workItem from="1730075299002" duration="472000" />
       <workItem from="1730075812405" duration="79000" />
       <workItem from="1730075949609" duration="16233000" />
-      <workItem from="1730159762187" duration="6206000" />
+      <workItem from="1730159762187" duration="15154000" />
+      <workItem from="1730181936617" duration="24000" />
+      <workItem from="1730785973734" duration="3449000" />
+      <workItem from="1730790783756" duration="1577000" />
     </task>
     <servers />
   </component>
