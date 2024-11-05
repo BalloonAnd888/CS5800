@@ -11,6 +11,6 @@ public class Loyalty {
             default -> 0.0;
         };
 
-        return totalCost * (1 - discount);
+        return Math.round((totalCost * (1 - discount)) * 100.0) / 100.0;
     }
 }
