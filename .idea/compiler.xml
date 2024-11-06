@@ -9,5 +9,8 @@
         <module name="Builder" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="HW5" target="22" />
+    </bytecodeTargetLevel>
   </component>
 </project>

@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ddfe2ea0-e2af-4607-b525-04414fefd3f3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/HW4/Factory/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW4/Factory/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW4/Factory/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW4/Factory/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW4/Factory/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW4/Factory/src/main/java/org/CarbFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW4/Factory/src/main/java/org/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW4/Factory/src/main/java/org/Driver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW4/Factory/src/main/java/org/FactoryCreator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW4/Factory/src/main/java/org/FatFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW4/Factory/src/main/java/org/MacronutrientFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW4/Factory/src/main/java/org/ProteinFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW4/Factory/src/test/java/CustomerTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="ddfe2ea0-e2af-4607-b525-04414fefd3f3" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,6 +40,17 @@
     &quot;Application.Main.executor&quot;: &quot;Run&quot;,
     &quot;DefaultPlantUmlFileTemplate&quot;: &quot;UML Object&quot;,
     &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;JUnit.CarbFactoryTest.testGetInstance.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CarbFactoryTest.testGetOption.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CustomerTest.testCreateMeal.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.FatFactoryTest.testGetInstance.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.FatFactoryTest.testGetOption.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.FoodTest.testBaconToppingCost.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.FoodTest.testBaseFoodCost.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.FoodTest.testMultipleToppingsCost.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LoyaltyTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LoyaltyTest.testLoyaltyDiscount.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.OrderTest.testCalculateTotalCost.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.PizzaBuilderTest.testAddToppings (1).executor&quot;: &quot;Run&quot;,
     &quot;JUnit.PizzaBuilderTest.testAddToppings.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.PizzaBuilderTest.testEat (1).executor&quot;: &quot;Run&quot;,
@@ -62,14 +59,16 @@
     &quot;JUnit.PizzaBuilderTest.testSetChain.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.PizzaBuilderTest.testSetSize (1).executor&quot;: &quot;Run&quot;,
     &quot;JUnit.PizzaBuilderTest.testSetSize.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProteinFactoryTest.testGetInstance.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProteinFactoryTest.testGetOption.executor&quot;: &quot;Run&quot;,
     &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
     &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
     &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;HW4&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;HW5&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/alau2/Documents/CS5800/HW4&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/alau2/Documents/CS5800&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -88,76 +87,82 @@
       <recent name="C:\Users\alau2\Documents\CS5800\HW3\src\Part1" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="PizzaBuilderTest.testAddToppings (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.FoodTest.testBaseFoodCost">
+    <configuration name="FoodTest.testBaconToppingCost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS5800" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HW4.Builder.src.test.java.*" />
+          <option name="PATTERN" value="HW5.src.test.java.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="HW4.Builder.src.test.java" />
-      <option name="MAIN_CLASS_NAME" value="HW4.Builder.src.test.java.PizzaBuilderTest" />
-      <option name="METHOD_NAME" value="testAddToppings" />
+      <option name="PACKAGE_NAME" value="HW5.src.test.java" />
+      <option name="MAIN_CLASS_NAME" value="HW5.src.test.java.FoodTest" />
+      <option name="METHOD_NAME" value="testBaconToppingCost" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PizzaBuilderTest.testEat (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FoodTest.testBaseFoodCost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS5800" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HW4.Builder.src.test.java.*" />
+          <option name="PATTERN" value="HW5.src.test.java.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="HW4.Builder.src.test.java" />
-      <option name="MAIN_CLASS_NAME" value="HW4.Builder.src.test.java.PizzaBuilderTest" />
-      <option name="METHOD_NAME" value="testEat" />
+      <option name="PACKAGE_NAME" value="HW5.src.test.java" />
+      <option name="MAIN_CLASS_NAME" value="HW5.src.test.java.FoodTest" />
+      <option name="METHOD_NAME" value="testBaseFoodCost" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PizzaBuilderTest.testEat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Builder" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PizzaBuilderTest" />
-      <option name="METHOD_NAME" value="testEat" />
+    <configuration name="FoodTest.testMultipleToppingsCost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CS5800" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="HW5.src.test.java.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="HW5.src.test.java" />
+      <option name="MAIN_CLASS_NAME" value="HW5.src.test.java.FoodTest" />
+      <option name="METHOD_NAME" value="testMultipleToppingsCost" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PizzaBuilderTest.testSetChain (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LoyaltyTest.testLoyaltyDiscount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS5800" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HW4.Builder.src.test.java.*" />
+          <option name="PATTERN" value="HW5.src.test.java.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="HW4.Builder.src.test.java" />
-      <option name="MAIN_CLASS_NAME" value="HW4.Builder.src.test.java.PizzaBuilderTest" />
-      <option name="METHOD_NAME" value="testSetChain" />
+      <option name="PACKAGE_NAME" value="HW5.src.test.java" />
+      <option name="MAIN_CLASS_NAME" value="HW5.src.test.java.LoyaltyTest" />
+      <option name="METHOD_NAME" value="testLoyaltyDiscount" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PizzaBuilderTest.testSetSize (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OrderTest.testCalculateTotalCost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS5800" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HW4.Builder.src.test.java.*" />
+          <option name="PATTERN" value="HW5.src.test.java.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="HW4.Builder.src.test.java" />
-      <option name="MAIN_CLASS_NAME" value="HW4.Builder.src.test.java.PizzaBuilderTest" />
-      <option name="METHOD_NAME" value="testSetSize" />
+      <option name="PACKAGE_NAME" value="HW5.src.test.java" />
+      <option name="MAIN_CLASS_NAME" value="HW5.src.test.java.OrderTest" />
+      <option name="METHOD_NAME" value="testCalculateTotalCost" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -165,19 +170,19 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PizzaBuilderTest.testEat (1)" />
-        <item itemvalue="JUnit.PizzaBuilderTest.testSetChain (1)" />
-        <item itemvalue="JUnit.PizzaBuilderTest.testSetSize (1)" />
-        <item itemvalue="JUnit.PizzaBuilderTest.testAddToppings (1)" />
-        <item itemvalue="JUnit.PizzaBuilderTest.testEat" />
+        <item itemvalue="JUnit.FoodTest.testBaseFoodCost" />
+        <item itemvalue="JUnit.OrderTest.testCalculateTotalCost" />
+        <item itemvalue="JUnit.LoyaltyTest.testLoyaltyDiscount" />
+        <item itemvalue="JUnit.FoodTest.testMultipleToppingsCost" />
+        <item itemvalue="JUnit.FoodTest.testBaconToppingCost" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23726.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23726.103" />
       </set>
     </attachedChunks>
   </component>
@@ -208,7 +213,11 @@
       <workItem from="1730075299002" duration="472000" />
       <workItem from="1730075812405" duration="79000" />
       <workItem from="1730075949609" duration="16233000" />
-      <workItem from="1730159762187" duration="6206000" />
+      <workItem from="1730159762187" duration="15154000" />
+      <workItem from="1730181936617" duration="24000" />
+      <workItem from="1730785973734" duration="3449000" />
+      <workItem from="1730790783756" duration="7493000" />
+      <workItem from="1730856159226" duration="659000" />
     </task>
     <servers />
   </component>
