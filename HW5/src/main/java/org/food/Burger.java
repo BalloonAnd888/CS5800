@@ -5,9 +5,4 @@ public class Burger implements Food{
     public double getCost() {
         return 5.0;
     }
-
-    @Override
-    public String getName() {
-        return "Burger";
-    }
 }

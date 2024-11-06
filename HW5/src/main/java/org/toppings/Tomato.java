@@ -11,9 +11,4 @@ public class Tomato extends ToppingsDecorator{
     public double getCost() {
         return food.getCost() + 0.25;
     }
-
-    @Override
-    public String getName() {
-        return food.getName() + ", Tomato";
-    }
 }

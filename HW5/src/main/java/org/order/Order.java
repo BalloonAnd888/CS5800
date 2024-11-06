@@ -19,4 +19,8 @@ public class Order {
         }
         return total;
     }
+
+    public List<Food> getFoods() {
+        return foods;
+    }
 }

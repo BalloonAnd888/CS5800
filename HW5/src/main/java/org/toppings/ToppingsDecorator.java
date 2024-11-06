@@ -8,9 +8,4 @@ public abstract class ToppingsDecorator implements Food {
     public ToppingsDecorator(Food food) {
         this.food = food;
     }
-
-    @Override
-    public String getName() {
-        return food.getName();
-    }
 }

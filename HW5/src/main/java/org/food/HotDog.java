@@ -5,9 +5,4 @@ public class HotDog implements Food {
     public double getCost() {
         return 7.5;
     }
-
-    @Override
-    public String getName() {
-        return "Hot Dog";
-    }
 }

@@ -11,9 +11,4 @@ public class Bacon extends ToppingsDecorator{
     public double getCost() {
         return food.getCost() + 0.5;
     }
-
-    @Override
-    public String getName() {
-        return food.getName() + ", Bacon";
-    }
 }
