@@ -7,10 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Builder" />
+        <module name="HW5" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="HW5" target="22" />
-    </bytecodeTargetLevel>
   </component>
 </project>

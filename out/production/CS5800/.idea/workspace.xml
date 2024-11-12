@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ddfe2ea0-e2af-4607-b525-04414fefd3f3" name="Changes" comment="" />
+    <list default="true" id="ddfe2ea0-e2af-4607-b525-04414fefd3f3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/HW6/Flyweight/src/main/java/org/Character.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW6/Flyweight/src/main/java/org/CharacterFlyweightFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW6/Flyweight/src/main/java/org/CharacterProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW6/Flyweight/src/main/java/org/Document.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW6/Flyweight/src/test/java/CharacterFlyweightFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW6/Flyweight/src/test/java/CharacterPropertiesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW6/Flyweight/src/test/java/CharacterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW6/Flyweight/src/test/java/DocumentTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW6/Flyweight/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW6/Flyweight/src/main/java/org/Driver.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,6 +60,7 @@
     &quot;JUnit.FoodTest.testMultipleToppingsCost.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.LoyaltyTest.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.LoyaltyTest.testLoyaltyDiscount.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.OrderTest.testAddFood.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.OrderTest.testCalculateTotalCost.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.PizzaBuilderTest.testAddToppings (1).executor&quot;: &quot;Run&quot;,
     &quot;JUnit.PizzaBuilderTest.testAddToppings.executor&quot;: &quot;Run&quot;,
@@ -66,8 +77,9 @@
     &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;HW5&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;HW6&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/alau2/Documents/CS5800/HW1/src&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/alau2/Documents/CS5800&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -86,8 +98,12 @@
       <recent name="C:\Users\alau2\Documents\CS5800\HW4" />
       <recent name="C:\Users\alau2\Documents\CS5800\HW3\src\Part1" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="HW6.Flyweight.src.main.java.org" />
+      <recent name="" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.FoodTest.testBaseFoodCost">
+  <component name="RunManager">
     <configuration name="FoodTest.testBaconToppingCost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS5800" />
       <extension name="coverage">
@@ -136,7 +152,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoyaltyTest.testLoyaltyDiscount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OrderTest.testAddFood" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS5800" />
       <extension name="coverage">
         <pattern>
@@ -145,8 +161,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="HW5.src.test.java" />
-      <option name="MAIN_CLASS_NAME" value="HW5.src.test.java.LoyaltyTest" />
-      <option name="METHOD_NAME" value="testLoyaltyDiscount" />
+      <option name="MAIN_CLASS_NAME" value="HW5.src.test.java.OrderTest" />
+      <option name="METHOD_NAME" value="testAddFood" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -170,11 +186,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FoodTest.testBaseFoodCost" />
-        <item itemvalue="JUnit.OrderTest.testCalculateTotalCost" />
-        <item itemvalue="JUnit.LoyaltyTest.testLoyaltyDiscount" />
+        <item itemvalue="JUnit.OrderTest.testAddFood" />
         <item itemvalue="JUnit.FoodTest.testMultipleToppingsCost" />
         <item itemvalue="JUnit.FoodTest.testBaconToppingCost" />
+        <item itemvalue="JUnit.FoodTest.testBaseFoodCost" />
+        <item itemvalue="JUnit.OrderTest.testCalculateTotalCost" />
       </list>
     </recent_temporary>
   </component>
@@ -217,7 +233,16 @@
       <workItem from="1730181936617" duration="24000" />
       <workItem from="1730785973734" duration="3449000" />
       <workItem from="1730790783756" duration="7493000" />
-      <workItem from="1730856159226" duration="659000" />
+      <workItem from="1730856159226" duration="1446000" />
+      <workItem from="1730861224543" duration="109000" />
+      <workItem from="1730861353675" duration="165000" />
+      <workItem from="1730861542238" duration="758000" />
+      <workItem from="1731191428026" duration="118000" />
+      <workItem from="1731191565504" duration="832000" />
+      <workItem from="1731197999636" duration="14000" />
+      <workItem from="1731289300991" duration="6076000" />
+      <workItem from="1731325265756" duration="16000" />
+      <workItem from="1731387659542" duration="4058000" />
     </task>
     <servers />
   </component>
