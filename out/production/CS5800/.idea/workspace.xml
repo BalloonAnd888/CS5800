@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ddfe2ea0-e2af-4607-b525-04414fefd3f3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/HW6/Flyweight/src/main/java/org/Character.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW6/Flyweight/src/main/java/org/CharacterFlyweightFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW6/Flyweight/src/main/java/org/CharacterProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW6/Flyweight/src/main/java/org/Document.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW6/Flyweight/src/test/java/CharacterFlyweightFactoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW6/Flyweight/src/test/java/CharacterPropertiesTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW6/Flyweight/src/test/java/CharacterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW6/Flyweight/src/test/java/DocumentTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW6/Flyweight/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW6/Flyweight/src/main/java/org/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW6/Flyweight/src/main/java/org/Document.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW6/Flyweight/src/main/java/org/Document.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelloWorldCS5800.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,7 +235,7 @@
       <workItem from="1731197999636" duration="14000" />
       <workItem from="1731289300991" duration="6076000" />
       <workItem from="1731325265756" duration="16000" />
-      <workItem from="1731387659542" duration="4058000" />
+      <workItem from="1731387659542" duration="5336000" />
     </task>
     <servers />
   </component>

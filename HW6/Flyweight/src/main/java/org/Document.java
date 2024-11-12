@@ -20,7 +20,7 @@ public class Document {
 
     public void save(String fileName) {
         System.out.println("Saving document to file: " + fileName);
-        try(FileWriter file = new FileWriter(fileName)) {
+        try(FileWriter file = new FileWriter("C:\\Users\\alau2\\Documents\\CS5800\\HW6\\Flyweight\\"+fileName)) {
             for (Character character : characters) {
                 file.write(character.getCharacter() + "," + character.getProperties().getColor() + "," + character.getProperties().getFont() + "," + character.getProperties().getSize() + "\n");
             }
@@ -34,7 +34,7 @@ public class Document {
         System.out.println("Loading document from file: " + fileName);
         Document document = new Document();
 
-        try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\alau2\\Documents\\CS5800\\HW6\\Flyweight\\"+fileName))) {
             String line;
             CharacterFlyweightFactory factory = new CharacterFlyweightFactory();
 
