@@ -13,11 +13,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class SongProxyTest {
     private SongService proxy;
-    private RealSong realSongService;
 
     @BeforeEach
     public void setUp() {
-        realSongService = new RealSong();
+        RealSong realSongService = new RealSong();
         realSongService.addSong(new Song(1, "Song A", "Artist 1", "Album X", 200));
         realSongService.addSong(new Song(2, "Song B", "Artist 2", "Album Y", 240));
         realSongService.addSong(new Song(3, "Song C", "Artist 1", "Album X", 180));

@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class CharacterFlyweightFactory {
-    private final Map<String, CharacterProperties> characterFlyweight = new HashMap<String, CharacterProperties>();
+    private final Map<String, CharacterProperties> characterFlyweight = new HashMap<>();
 
     public CharacterProperties getCharacterFlyweight(String font, String color, int size) {
         String key = font + color + size;
