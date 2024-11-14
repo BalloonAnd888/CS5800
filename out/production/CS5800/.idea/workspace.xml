@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ddfe2ea0-e2af-4607-b525-04414fefd3f3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/HW6/Proxy/src/main/java/org/RealSong.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW6/Proxy/src/main/java/org/Song.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW6/Proxy/src/main/java/org/SongProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW6/Proxy/src/main/java/org/SongService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW6/Proxy/src/test/java/RealSongTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW6/Proxy/src/test/java/SongProxyTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW6/Proxy/src/test/java/SongTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW6/Proxy/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW6/Proxy/src/main/java/org/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CS5800/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CS5800/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="ddfe2ea0-e2af-4607-b525-04414fefd3f3" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,13 +42,17 @@
     &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
     &quot;JUnit.CarbFactoryTest.testGetInstance.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.CarbFactoryTest.testGetOption.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CharacterFlyweightFactoryTest.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.CharacterFlyweightFactoryTest.testGetCharacterFlyweight.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CharacterPropertiesTest.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.CharacterPropertiesTest.testGetColor.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.CharacterPropertiesTest.testGetFont.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.CharacterPropertiesTest.testGetSize.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CharacterTest.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.CharacterTest.testGetCharacter.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.CharacterTest.testGetProperties.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.CustomerTest.testCreateMeal.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DocumentTest.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.DocumentTest.testAddCharacter.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.DocumentTest.testGetCharacter.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.DocumentTest.testLoad.executor&quot;: &quot;Run&quot;,
@@ -82,9 +76,15 @@
     &quot;JUnit.PizzaBuilderTest.testSetSize.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.ProteinFactoryTest.testGetInstance.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.ProteinFactoryTest.testGetOption.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RealSongTest.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.RealSongTest.testSearchByAlbum.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.RealSongTest.testSearchById.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.RealSongTest.testSearchByTitle.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SongProxyTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SongProxyTest.testSearchByAlbum.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SongProxyTest.testSearchById.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SongProxyTest.testSearchByTitle.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SongTest.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.SongTest.testGetAlbum.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.SongTest.testGetArtist.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.SongTest.testGetDuration.executor&quot;: &quot;Run&quot;,
@@ -123,8 +123,38 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SongProxyTest.testSearchById">
-    <configuration name="RealSongTest.testSearchByAlbum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.SongTest">
+    <configuration name="CharacterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CS5800" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="HW6.Flyweight.src.test.java.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="HW6.Flyweight.src.test.java" />
+      <option name="MAIN_CLASS_NAME" value="HW6.Flyweight.src.test.java.CharacterTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DocumentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CS5800" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="HW6.Flyweight.src.test.java.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="HW6.Flyweight.src.test.java" />
+      <option name="MAIN_CLASS_NAME" value="HW6.Flyweight.src.test.java.DocumentTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RealSongTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS5800" />
       <extension name="coverage">
         <pattern>
@@ -134,45 +164,12 @@
       </extension>
       <option name="PACKAGE_NAME" value="HW6.Proxy.src.test.java" />
       <option name="MAIN_CLASS_NAME" value="HW6.Proxy.src.test.java.RealSongTest" />
-      <option name="METHOD_NAME" value="testSearchByAlbum" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RealSongTest.testSearchById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CS5800" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="HW6.Proxy.src.test.java.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="HW6.Proxy.src.test.java" />
-      <option name="MAIN_CLASS_NAME" value="HW6.Proxy.src.test.java.RealSongTest" />
-      <option name="METHOD_NAME" value="testSearchById" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RealSongTest.testSearchByTitle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CS5800" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="HW6.Proxy.src.test.java.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="HW6.Proxy.src.test.java" />
-      <option name="MAIN_CLASS_NAME" value="HW6.Proxy.src.test.java.RealSongTest" />
-      <option name="METHOD_NAME" value="testSearchByTitle" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SongProxyTest.testSearchById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SongProxyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS5800" />
       <extension name="coverage">
         <pattern>
@@ -182,13 +179,12 @@
       </extension>
       <option name="PACKAGE_NAME" value="HW6.Proxy.src.test.java" />
       <option name="MAIN_CLASS_NAME" value="HW6.Proxy.src.test.java.SongProxyTest" />
-      <option name="METHOD_NAME" value="testSearchById" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SongTest.testGetDuration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SongTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS5800" />
       <extension name="coverage">
         <pattern>
@@ -198,19 +194,18 @@
       </extension>
       <option name="PACKAGE_NAME" value="HW6.Proxy.src.test.java" />
       <option name="MAIN_CLASS_NAME" value="HW6.Proxy.src.test.java.SongTest" />
-      <option name="METHOD_NAME" value="testGetDuration" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SongProxyTest.testSearchById" />
-        <item itemvalue="JUnit.RealSongTest.testSearchByTitle" />
-        <item itemvalue="JUnit.RealSongTest.testSearchByAlbum" />
-        <item itemvalue="JUnit.RealSongTest.testSearchById" />
-        <item itemvalue="JUnit.SongTest.testGetDuration" />
+        <item itemvalue="JUnit.SongTest" />
+        <item itemvalue="JUnit.SongProxyTest" />
+        <item itemvalue="JUnit.RealSongTest" />
+        <item itemvalue="JUnit.DocumentTest" />
+        <item itemvalue="JUnit.CharacterTest" />
       </list>
     </recent_temporary>
   </component>
@@ -265,7 +260,10 @@
       <workItem from="1731387659542" duration="5336000" />
       <workItem from="1731401464497" duration="6349000" />
       <workItem from="1731454468541" duration="8658000" />
-      <workItem from="1731478370674" duration="2585000" />
+      <workItem from="1731478370674" duration="4722000" />
+      <workItem from="1731553385224" duration="15000" />
+      <workItem from="1731553618732" duration="39000" />
+      <workItem from="1731557768887" duration="657000" />
     </task>
     <servers />
   </component>
