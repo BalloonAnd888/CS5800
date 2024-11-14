@@ -42,7 +42,21 @@
     &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
     &quot;JUnit.CarbFactoryTest.testGetInstance.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.CarbFactoryTest.testGetOption.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CharacterFlyweightFactoryTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CharacterFlyweightFactoryTest.testGetCharacterFlyweight.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CharacterPropertiesTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CharacterPropertiesTest.testGetColor.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CharacterPropertiesTest.testGetFont.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CharacterPropertiesTest.testGetSize.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CharacterTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CharacterTest.testGetCharacter.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CharacterTest.testGetProperties.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.CustomerTest.testCreateMeal.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DocumentTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DocumentTest.testAddCharacter.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DocumentTest.testGetCharacter.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DocumentTest.testLoad.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DocumentTest.testSave.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.FatFactoryTest.testGetInstance.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.FatFactoryTest.testGetOption.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.FoodTest.testBaconToppingCost.executor&quot;: &quot;Run&quot;,
@@ -50,6 +64,7 @@
     &quot;JUnit.FoodTest.testMultipleToppingsCost.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.LoyaltyTest.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.LoyaltyTest.testLoyaltyDiscount.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.OrderTest.testAddFood.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.OrderTest.testCalculateTotalCost.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.PizzaBuilderTest.testAddToppings (1).executor&quot;: &quot;Run&quot;,
     &quot;JUnit.PizzaBuilderTest.testAddToppings.executor&quot;: &quot;Run&quot;,
@@ -61,13 +76,29 @@
     &quot;JUnit.PizzaBuilderTest.testSetSize.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.ProteinFactoryTest.testGetInstance.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.ProteinFactoryTest.testGetOption.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RealSongTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RealSongTest.testSearchByAlbum.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RealSongTest.testSearchById.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RealSongTest.testSearchByTitle.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SongProxyTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SongProxyTest.testSearchByAlbum.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SongProxyTest.testSearchById.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SongProxyTest.testSearchByTitle.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SongTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SongTest.testGetAlbum.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SongTest.testGetArtist.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SongTest.testGetDuration.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SongTest.testGetID.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SongTest.testGetTitle.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SongTest.testSong.executor&quot;: &quot;Run&quot;,
     &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
     &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
     &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;HW5&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;HW6&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/alau2/Documents/CS5800/HW1/src&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/alau2/Documents/CS5800&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -86,95 +117,95 @@
       <recent name="C:\Users\alau2\Documents\CS5800\HW4" />
       <recent name="C:\Users\alau2\Documents\CS5800\HW3\src\Part1" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="HW6.Proxy.src.main.java.org" />
+      <recent name="HW6.Flyweight.src.main.java.org" />
+      <recent name="" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.FoodTest.testBaseFoodCost">
-    <configuration name="FoodTest.testBaconToppingCost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.SongTest">
+    <configuration name="CharacterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS5800" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HW5.src.test.java.*" />
+          <option name="PATTERN" value="HW6.Flyweight.src.test.java.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="HW5.src.test.java" />
-      <option name="MAIN_CLASS_NAME" value="HW5.src.test.java.FoodTest" />
-      <option name="METHOD_NAME" value="testBaconToppingCost" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="HW6.Flyweight.src.test.java" />
+      <option name="MAIN_CLASS_NAME" value="HW6.Flyweight.src.test.java.CharacterTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FoodTest.testBaseFoodCost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DocumentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS5800" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HW5.src.test.java.*" />
+          <option name="PATTERN" value="HW6.Flyweight.src.test.java.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="HW5.src.test.java" />
-      <option name="MAIN_CLASS_NAME" value="HW5.src.test.java.FoodTest" />
-      <option name="METHOD_NAME" value="testBaseFoodCost" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="HW6.Flyweight.src.test.java" />
+      <option name="MAIN_CLASS_NAME" value="HW6.Flyweight.src.test.java.DocumentTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FoodTest.testMultipleToppingsCost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RealSongTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS5800" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HW5.src.test.java.*" />
+          <option name="PATTERN" value="HW6.Proxy.src.test.java.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="HW5.src.test.java" />
-      <option name="MAIN_CLASS_NAME" value="HW5.src.test.java.FoodTest" />
-      <option name="METHOD_NAME" value="testMultipleToppingsCost" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="HW6.Proxy.src.test.java" />
+      <option name="MAIN_CLASS_NAME" value="HW6.Proxy.src.test.java.RealSongTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoyaltyTest.testLoyaltyDiscount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SongProxyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS5800" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HW5.src.test.java.*" />
+          <option name="PATTERN" value="HW6.Proxy.src.test.java.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="HW5.src.test.java" />
-      <option name="MAIN_CLASS_NAME" value="HW5.src.test.java.LoyaltyTest" />
-      <option name="METHOD_NAME" value="testLoyaltyDiscount" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="HW6.Proxy.src.test.java" />
+      <option name="MAIN_CLASS_NAME" value="HW6.Proxy.src.test.java.SongProxyTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderTest.testCalculateTotalCost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SongTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS5800" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HW5.src.test.java.*" />
+          <option name="PATTERN" value="HW6.Proxy.src.test.java.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="HW5.src.test.java" />
-      <option name="MAIN_CLASS_NAME" value="HW5.src.test.java.OrderTest" />
-      <option name="METHOD_NAME" value="testCalculateTotalCost" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="HW6.Proxy.src.test.java" />
+      <option name="MAIN_CLASS_NAME" value="HW6.Proxy.src.test.java.SongTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FoodTest.testBaseFoodCost" />
-        <item itemvalue="JUnit.OrderTest.testCalculateTotalCost" />
-        <item itemvalue="JUnit.LoyaltyTest.testLoyaltyDiscount" />
-        <item itemvalue="JUnit.FoodTest.testMultipleToppingsCost" />
-        <item itemvalue="JUnit.FoodTest.testBaconToppingCost" />
+        <item itemvalue="JUnit.SongTest" />
+        <item itemvalue="JUnit.SongProxyTest" />
+        <item itemvalue="JUnit.RealSongTest" />
+        <item itemvalue="JUnit.DocumentTest" />
+        <item itemvalue="JUnit.CharacterTest" />
       </list>
     </recent_temporary>
   </component>
@@ -217,7 +248,22 @@
       <workItem from="1730181936617" duration="24000" />
       <workItem from="1730785973734" duration="3449000" />
       <workItem from="1730790783756" duration="7493000" />
-      <workItem from="1730856159226" duration="659000" />
+      <workItem from="1730856159226" duration="1446000" />
+      <workItem from="1730861224543" duration="109000" />
+      <workItem from="1730861353675" duration="165000" />
+      <workItem from="1730861542238" duration="758000" />
+      <workItem from="1731191428026" duration="118000" />
+      <workItem from="1731191565504" duration="832000" />
+      <workItem from="1731197999636" duration="14000" />
+      <workItem from="1731289300991" duration="6076000" />
+      <workItem from="1731325265756" duration="16000" />
+      <workItem from="1731387659542" duration="5336000" />
+      <workItem from="1731401464497" duration="6349000" />
+      <workItem from="1731454468541" duration="8658000" />
+      <workItem from="1731478370674" duration="4722000" />
+      <workItem from="1731553385224" duration="15000" />
+      <workItem from="1731553618732" duration="39000" />
+      <workItem from="1731557768887" duration="657000" />
     </task>
     <servers />
   </component>
