@@ -41,16 +41,10 @@ public class Driver {
 
         stanley.sendMessage(receivers, "Hi Alan");
 
-//        System.out.println(alan.getChatHistory());
-
-
-
-
-        // Users can send messages to one or more other users through the chat server
-        // Users can undo the last message they sent using the Memento design pattern
-        // Users can block messages from specific users using the Mediator design pattern
-        // Users can receive messages from other users and view the chat history for a specific user
-
-
+        System.out.println("\nMessages involving Alan:");
+        searchMessagesByUser iterator = new searchMessagesByUser(alan.getChatHistory().getChatHistory(), alan);
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
     }
 }
