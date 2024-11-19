@@ -4,9 +4,6 @@ import java.util.ArrayList;
 
 public class Driver {
     public static void main(String[] args) {
-
-        System.out.println("Hello world!");
-
         ChatServer server = new ChatServer();
 
         User tommy = new User("Tommy", server);

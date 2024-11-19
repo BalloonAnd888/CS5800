@@ -1,7 +1,5 @@
 package HW7.MementoAndMediator.src.main.java.org;
 
-import java.sql.Array;
-import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.Date;
 
