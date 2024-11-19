@@ -26,8 +26,16 @@ public class Driver {
         stanley.sendMessage(receivers, "Hi good sir");
         alan.sendMessage(receivers, "Hi Stanley");
 
-//        System.out.println(alan.getChatHistory());
-        alan.undoLastMessage();
+        System.out.println("Alan's Chat History");
+        for (Message message : alan.getChatHistory().getChatHistory()) {
+            System.out.println(message);
+        }
+
+        stanley.undoLastMessage();
+        System.out.println("Stanley's Chat History");
+        for (Message message : stanley.getChatHistory().getChatHistory()) {
+            System.out.println(message);
+        }
 
         server.blockUser("Alan");
 
