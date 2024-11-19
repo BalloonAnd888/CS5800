@@ -1,0 +1,58 @@
+@startuml
+'https://plantuml.com/object-diagram
+
+'After step 2 when the app folder is deleted
+
+object "<u>phpDemo1Folder:Folder</u>" as pdf {
+    name = "php_demo1"
+}
+
+object "<u>sourceFilesFolder:Folder</u>" as sff {
+    name = "Source Files"
+}
+
+object "<u>includePathFolder:Folder</u>" as ipf {
+    name = "Include Path"
+}
+
+object "<u>remoteFilesFolder:Folder</u>" as rff {
+    name = "Remote Files"
+}
+
+object "<u>.phalconFolder:Folder</u>" as pf {
+    name = ".phalcon"
+}
+
+object "<u>cacheFolder:Folder</u>" as cf {
+    name = "cache"
+}
+
+object "<u>publicFolder:Folder</u>" as puf {
+    name = "Remote Files"
+}
+
+object "<u>.htaccessFile:File</u>" as hf {
+    name = ".htaccess"
+}
+
+object "<u>.htrouter.phpFile:File</u>" as htrf {
+    name = ".htrouter.php"
+}
+
+object "<u>index.htmlFile:File</u>" as itf{
+    name = "index.html"
+}
+
+pdf *-- sff
+pdf *-- ipf
+pdf *-- rff
+
+sff *-- pf
+sff *-- cf
+sff *-- puf
+
+puf *-- hf
+puf *-- htrf
+puf *-- itf
+
+@enduml

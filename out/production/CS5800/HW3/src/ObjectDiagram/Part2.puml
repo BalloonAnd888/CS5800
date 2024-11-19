@@ -1,0 +1,31 @@
+@startuml
+'https://plantuml.com/object-diagram
+
+'after 3 ships have been dynamically created
+object "<u>titanic:Ship</u>" as ts {
+    shipName = "Titanic"
+    yearBuilt = "March31st,1909"
+}
+
+object "<u>MVGemini:Ship</u>" as ms {
+    shipName = "MVGemini"
+    yearBuilt = "May30th,1991"
+}
+
+object "<u>MVGemini:CruiseShip</u>" as mc {
+    cargoCapacityInTonnage = 100
+}
+
+object "<u>EverGiven:Ship</u>" as egs {
+    shipName = "EverGiven"
+    yearBuilt = "September25th,2018"
+}
+
+object "<u>EverGiven:CargoShip</u>" as egc {
+    maxNumberPassengers = 220940
+}
+
+ms <|-- mc
+egs <|-- egc
+
+@enduml
