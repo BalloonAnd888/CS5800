@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ddfe2ea0-e2af-4607-b525-04414fefd3f3" name="Changes" comment="" />
+    <list default="true" id="ddfe2ea0-e2af-4607-b525-04414fefd3f3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/HW8/StateChain/src/main/java/org/SnackDispenseHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW8/StateChain/src/main/java/org/StateOfVendingMachine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW8/StateChain/src/main/java/org/VendingMachine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW8/StateChain/src/test/java/SnackTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW8/StateChain/src/main/java/org/Snack.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW8/StateChain/src/main/java/org/Snack.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -113,6 +119,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -129,7 +136,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.SnackTest.testGetName">
     <configuration name="MessageTest.testGetRecipients" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS5800" />
       <extension name="coverage">
@@ -162,17 +169,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SongProxyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SnackTest.testGetName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS5800" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HW6.Proxy.src.test.java.*" />
+          <option name="PATTERN" value="HW8.StateChain.src.test.java.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="HW6.Proxy.src.test.java" />
-      <option name="MAIN_CLASS_NAME" value="HW6.Proxy.src.test.java.SongProxyTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="HW8.StateChain.src.test.java" />
+      <option name="MAIN_CLASS_NAME" value="HW8.StateChain.src.test.java.SnackTest" />
+      <option name="METHOD_NAME" value="testGetName" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -210,11 +218,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SnackTest.testGetName" />
         <item itemvalue="JUnit.UserTest.testGetName" />
         <item itemvalue="JUnit.MessageTest.testGetRecipients" />
         <item itemvalue="JUnit.MessageTest.testGetSender" />
         <item itemvalue="JUnit.SongTest" />
-        <item itemvalue="JUnit.SongProxyTest" />
       </list>
     </recent_temporary>
   </component>
@@ -279,6 +287,9 @@
       <workItem from="1732153702299" duration="164000" />
       <workItem from="1732359946664" duration="200000" />
       <workItem from="1732360153868" duration="72000" />
+      <workItem from="1732360242443" duration="805000" />
+      <workItem from="1732441198665" duration="4887000" />
+      <workItem from="1732508999429" duration="662000" />
     </task>
     <servers />
   </component>
