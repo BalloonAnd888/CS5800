@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ddfe2ea0-e2af-4607-b525-04414fefd3f3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/HW7/MementoAndMediator/src/test/java/MessageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW7/MementoAndMediator/src/main/java/org/ChatHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW7/MementoAndMediator/src/main/java/org/ChatHistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW7/MementoAndMediator/src/main/java/org/ChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW7/MementoAndMediator/src/main/java/org/ChatServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW7/MementoAndMediator/src/main/java/org/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW7/MementoAndMediator/src/main/java/org/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW7/MementoAndMediator/src/main/java/org/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW7/MementoAndMediator/src/main/java/org/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW7/MementoAndMediator/src/main/java/org/MessageMemento.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW7/MementoAndMediator/src/main/java/org/MessageMemento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW7/MementoAndMediator/src/main/java/org/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW7/MementoAndMediator/src/main/java/org/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW8/ClassDiagram/TextEditor.puml" beforeDir="false" afterPath="$PROJECT_DIR$/HW8/ClassDiagram/TextEditor.puml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,10 +15,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Python Script" />
+        <option value="Interface" />
+        <option value="Class" />
         <option value="UML Class" />
         <option value="UML Object" />
-        <option value="Python Script" />
-        <option value="Class" />
       </list>
     </option>
   </component>
@@ -42,85 +37,95 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Driver.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;DefaultPlantUmlFileTemplate&quot;: &quot;UML Object&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;JUnit.CarbFactoryTest.testGetInstance.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CarbFactoryTest.testGetOption.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CharacterFlyweightFactoryTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CharacterFlyweightFactoryTest.testGetCharacterFlyweight.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CharacterPropertiesTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CharacterPropertiesTest.testGetColor.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CharacterPropertiesTest.testGetFont.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CharacterPropertiesTest.testGetSize.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CharacterTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CharacterTest.testGetCharacter.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CharacterTest.testGetProperties.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CustomerTest.testCreateMeal.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.DocumentTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.DocumentTest.testAddCharacter.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.DocumentTest.testGetCharacter.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.DocumentTest.testLoad.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.DocumentTest.testSave.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.FatFactoryTest.testGetInstance.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.FatFactoryTest.testGetOption.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.FoodTest.testBaconToppingCost.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.FoodTest.testBaseFoodCost.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.FoodTest.testMultipleToppingsCost.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LoyaltyTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LoyaltyTest.testLoyaltyDiscount.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.OrderTest.testAddFood.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.OrderTest.testCalculateTotalCost.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PizzaBuilderTest.testAddToppings (1).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PizzaBuilderTest.testAddToppings.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PizzaBuilderTest.testEat (1).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PizzaBuilderTest.testEat.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PizzaBuilderTest.testSetChain (1).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PizzaBuilderTest.testSetChain.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PizzaBuilderTest.testSetSize (1).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PizzaBuilderTest.testSetSize.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ProteinFactoryTest.testGetInstance.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ProteinFactoryTest.testGetOption.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RealSongTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RealSongTest.testSearchByAlbum.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RealSongTest.testSearchById.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RealSongTest.testSearchByTitle.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SongProxyTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SongProxyTest.testSearchByAlbum.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SongProxyTest.testSearchById.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SongProxyTest.testSearchByTitle.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SongTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SongTest.testGetAlbum.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SongTest.testGetArtist.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SongTest.testGetDuration.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SongTest.testGetID.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SongTest.testGetTitle.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SongTest.testSong.executor&quot;: &quot;Run&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;HW7&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Users/alau2/Documents/CS5800/HW1/src&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/alau2/Documents/CS5800&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Driver.executor": "Run",
+    "Application.Main.executor": "Run",
+    "DefaultPlantUmlFileTemplate": "UML Object",
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.CarbFactoryTest.testGetInstance.executor": "Run",
+    "JUnit.CarbFactoryTest.testGetOption.executor": "Run",
+    "JUnit.CharacterFlyweightFactoryTest.executor": "Run",
+    "JUnit.CharacterFlyweightFactoryTest.testGetCharacterFlyweight.executor": "Run",
+    "JUnit.CharacterPropertiesTest.executor": "Run",
+    "JUnit.CharacterPropertiesTest.testGetColor.executor": "Run",
+    "JUnit.CharacterPropertiesTest.testGetFont.executor": "Run",
+    "JUnit.CharacterPropertiesTest.testGetSize.executor": "Run",
+    "JUnit.CharacterTest.executor": "Run",
+    "JUnit.CharacterTest.testGetCharacter.executor": "Run",
+    "JUnit.CharacterTest.testGetProperties.executor": "Run",
+    "JUnit.CustomerTest.testCreateMeal.executor": "Run",
+    "JUnit.DocumentTest.executor": "Run",
+    "JUnit.DocumentTest.testAddCharacter.executor": "Run",
+    "JUnit.DocumentTest.testGetCharacter.executor": "Run",
+    "JUnit.DocumentTest.testLoad.executor": "Run",
+    "JUnit.DocumentTest.testSave.executor": "Run",
+    "JUnit.FatFactoryTest.testGetInstance.executor": "Run",
+    "JUnit.FatFactoryTest.testGetOption.executor": "Run",
+    "JUnit.FoodTest.testBaconToppingCost.executor": "Run",
+    "JUnit.FoodTest.testBaseFoodCost.executor": "Run",
+    "JUnit.FoodTest.testMultipleToppingsCost.executor": "Run",
+    "JUnit.LoyaltyTest.executor": "Run",
+    "JUnit.LoyaltyTest.testLoyaltyDiscount.executor": "Run",
+    "JUnit.MessageTest.testGetRecipients.executor": "Run",
+    "JUnit.MessageTest.testGetSender.executor": "Run",
+    "JUnit.OrderTest.testAddFood.executor": "Run",
+    "JUnit.OrderTest.testCalculateTotalCost.executor": "Run",
+    "JUnit.PizzaBuilderTest.testAddToppings (1).executor": "Run",
+    "JUnit.PizzaBuilderTest.testAddToppings.executor": "Run",
+    "JUnit.PizzaBuilderTest.testEat (1).executor": "Run",
+    "JUnit.PizzaBuilderTest.testEat.executor": "Run",
+    "JUnit.PizzaBuilderTest.testSetChain (1).executor": "Run",
+    "JUnit.PizzaBuilderTest.testSetChain.executor": "Run",
+    "JUnit.PizzaBuilderTest.testSetSize (1).executor": "Run",
+    "JUnit.PizzaBuilderTest.testSetSize.executor": "Run",
+    "JUnit.ProteinFactoryTest.testGetInstance.executor": "Run",
+    "JUnit.ProteinFactoryTest.testGetOption.executor": "Run",
+    "JUnit.RealSongTest.executor": "Run",
+    "JUnit.RealSongTest.testSearchByAlbum.executor": "Run",
+    "JUnit.RealSongTest.testSearchById.executor": "Run",
+    "JUnit.RealSongTest.testSearchByTitle.executor": "Run",
+    "JUnit.SnackTest.testGetName.executor": "Run",
+    "JUnit.SnackTest.testGetPrice.executor": "Run",
+    "JUnit.SnackTest.testGetQuantity.executor": "Run",
+    "JUnit.SongProxyTest.executor": "Run",
+    "JUnit.SongProxyTest.testSearchByAlbum.executor": "Run",
+    "JUnit.SongProxyTest.testSearchById.executor": "Run",
+    "JUnit.SongProxyTest.testSearchByTitle.executor": "Run",
+    "JUnit.SongTest.executor": "Run",
+    "JUnit.SongTest.testGetAlbum.executor": "Run",
+    "JUnit.SongTest.testGetArtist.executor": "Run",
+    "JUnit.SongTest.testGetDuration.executor": "Run",
+    "JUnit.SongTest.testGetID.executor": "Run",
+    "JUnit.SongTest.testGetTitle.executor": "Run",
+    "JUnit.SongTest.testSong.executor": "Run",
+    "JUnit.UserTest.testGetName.executor": "Run",
+    "JUnit.VendingMachineTest.testGetMoney.executor": "Run",
+    "JUnit.VendingMachineTest.testGetSnack.executor": "Run",
+    "JUnit.VendingMachineTest.testGetState.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "HW8",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "C:/Users/alau2/Documents/CS5800/HW1/src",
+    "last_opened_file_path": "C:/Users/alau2/Documents/CS5800/HW8/ClassDiagram",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\alau2\Documents\CS5800\HW4" />
@@ -134,88 +139,93 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="CharacterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SnackTest.testGetPrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS5800" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HW6.Flyweight.src.test.java.*" />
+          <option name="PATTERN" value="HW8.StateChain.src.test.java.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="HW6.Flyweight.src.test.java" />
-      <option name="MAIN_CLASS_NAME" value="HW6.Flyweight.src.test.java.CharacterTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="HW8.StateChain.src.test.java" />
+      <option name="MAIN_CLASS_NAME" value="HW8.StateChain.src.test.java.SnackTest" />
+      <option name="METHOD_NAME" value="testGetPrice" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DocumentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SnackTest.testGetQuantity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS5800" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HW6.Flyweight.src.test.java.*" />
+          <option name="PATTERN" value="HW8.StateChain.src.test.java.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="HW6.Flyweight.src.test.java" />
-      <option name="MAIN_CLASS_NAME" value="HW6.Flyweight.src.test.java.DocumentTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="HW8.StateChain.src.test.java" />
+      <option name="MAIN_CLASS_NAME" value="HW8.StateChain.src.test.java.SnackTest" />
+      <option name="METHOD_NAME" value="testGetQuantity" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RealSongTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VendingMachineTest.testGetMoney" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS5800" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HW6.Proxy.src.test.java.*" />
+          <option name="PATTERN" value="HW8.StateChain.src.test.java.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="HW6.Proxy.src.test.java" />
-      <option name="MAIN_CLASS_NAME" value="HW6.Proxy.src.test.java.RealSongTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="HW8.StateChain.src.test.java" />
+      <option name="MAIN_CLASS_NAME" value="HW8.StateChain.src.test.java.VendingMachineTest" />
+      <option name="METHOD_NAME" value="testGetMoney" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SongProxyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VendingMachineTest.testGetSnack" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS5800" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HW6.Proxy.src.test.java.*" />
+          <option name="PATTERN" value="HW8.StateChain.src.test.java.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="HW6.Proxy.src.test.java" />
-      <option name="MAIN_CLASS_NAME" value="HW6.Proxy.src.test.java.SongProxyTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="HW8.StateChain.src.test.java" />
+      <option name="MAIN_CLASS_NAME" value="HW8.StateChain.src.test.java.VendingMachineTest" />
+      <option name="METHOD_NAME" value="testGetSnack" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SongTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VendingMachineTest.testGetState" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS5800" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HW6.Proxy.src.test.java.*" />
+          <option name="PATTERN" value="HW8.StateChain.src.test.java.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="HW6.Proxy.src.test.java" />
-      <option name="MAIN_CLASS_NAME" value="HW6.Proxy.src.test.java.SongTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="HW8.StateChain.src.test.java" />
+      <option name="MAIN_CLASS_NAME" value="HW8.StateChain.src.test.java.VendingMachineTest" />
+      <option name="METHOD_NAME" value="testGetState" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SongTest" />
-        <item itemvalue="JUnit.SongProxyTest" />
-        <item itemvalue="JUnit.RealSongTest" />
-        <item itemvalue="JUnit.DocumentTest" />
-        <item itemvalue="JUnit.CharacterTest" />
+        <item itemvalue="JUnit.VendingMachineTest.testGetState" />
+        <item itemvalue="JUnit.VendingMachineTest.testGetMoney" />
+        <item itemvalue="JUnit.VendingMachineTest.testGetSnack" />
+        <item itemvalue="JUnit.SnackTest.testGetPrice" />
+        <item itemvalue="JUnit.SnackTest.testGetQuantity" />
       </list>
     </recent_temporary>
   </component>
@@ -276,7 +286,14 @@
       <workItem from="1731557768887" duration="1349000" />
       <workItem from="1731729054116" duration="2765000" />
       <workItem from="1731738130140" duration="1042000" />
-      <workItem from="1731980652726" duration="6084000" />
+      <workItem from="1731980652726" duration="11287000" />
+      <workItem from="1732153702299" duration="164000" />
+      <workItem from="1732359946664" duration="200000" />
+      <workItem from="1732360153868" duration="72000" />
+      <workItem from="1732360242443" duration="805000" />
+      <workItem from="1732441198665" duration="4887000" />
+      <workItem from="1732508999429" duration="11378000" />
+      <workItem from="1732581274051" duration="7441000" />
     </task>
     <servers />
   </component>
