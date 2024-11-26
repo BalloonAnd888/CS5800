@@ -1,16 +1,127 @@
 @startuml
 'https://plantuml.com/object-diagram
 
-object London
-object Washington
-object Berlin
-object NewYork
-
-map CapitalCity {
- UK *-> London
- USA *--> Washington
- Germany *---> Berlin
+object "<u>testDocument:Document</u>" as td {
+    characters = ["H", "e", "l", "l", "o", "W", "o", "r", "l", "d", "C", "S", "5", "8", "0"]
+    propertiesFactory = CharacterPropertiesFactory
 }
 
-NewYork --> CapitalCity::USA
+map "<u>propertiesFactory:CharacterPropertiesFactory</u>" as pf {
+    "ArialBlack14" => ArialBlack14
+    "ArialBlack16" => ArialBlack16
+    "VerdanaRed12" => VerdanaRed12
+    "VerdanaBlue18" => VerdanaBlue18
+}
+
+object "<u>character_H:Character</u>" as cH {
+    character = "H"
+    characterProperty = ArialBlack16
+}
+
+object "<u>character_e:Character</u>" as ce {
+    character = "e"
+    characterProperty = ArialBlack14
+}
+
+object "<u>character_l:Character</u>" as cl {
+    character = "l"
+    characterProperty = ArialBlack14
+}
+
+object "<u>character_o:Character</u>" as co {
+    character = "o"
+    characterProperty = ArialBlack14
+}
+
+object "<u>character_W:Character</u>" as cW {
+    character = "W"
+    characterProperty = ArialBlack16
+}
+
+object "<u>character_r:Character</u>" as cr {
+    character = "r"
+    characterProperty = ArialBlack14
+}
+
+object "<u>character_d:Character</u>" as cd {
+    character = "d"
+    characterProperty = ArialBlack14
+}
+
+object "<u>character_C:Character</u>" as cC {
+    character = "C"
+    characterProperty = VerdanaBlue18
+}
+
+object "<u>character_S:Character</u>" as cS {
+    character = "S"
+    characterProperty = VerdanaBlue18
+}
+
+object "<u>character_5:Character</u>" as c5 {
+    character = "5"
+    characterProperty = VerdanaRed12
+}
+
+object "<u>character_8:Character</u>" as c8{
+    character = "8"
+    characterProperty = VerdanaRed12
+}
+
+object "<u>character_0:Character</u>" as c0{
+    character = "0"
+    characterProperty = VerdanaRed12
+}
+
+object "<u>arialBlack16:CharacterProperties</u>" as ab16{
+    font = "Arial"
+    color = "Black"
+    size = 16
+}
+
+object "<u>arialBlack14:CharacterProperties</u>" as ab14{
+    font = "Arial"
+    color = "Black"
+    size = 14
+}
+
+object "<u>verdanaBlue18:CharacterProperties</u>" as vb18{
+    font = "Verdana"
+    color = "Blue"
+    size = 18
+}
+
+object "<u>verdanaRed12:CharacterProperties</u>" as vr12{
+    font = "Verdana"
+    color = "Red"
+    size = 12
+}
+
+td o-- cH
+td o-- ce
+td o-- cl
+td o-- co
+td o-- cW
+td o-- cr
+td o-- cd
+td o-- cC
+td o-- cS
+td o-- c5
+td o-- c8
+td o-- c0
+td o-- pf
+
+cH o-- ab16
+ce o-- ab14
+cl o-- ab14
+co o-- ab14
+cW o-- ab16
+cr o-- ab14
+cd o-- ab14
+cC o-- vb18
+cS o-- vb18
+c5 o-- vr12
+c8 o-- vr12
+c0 o-- vr12
+
 @enduml

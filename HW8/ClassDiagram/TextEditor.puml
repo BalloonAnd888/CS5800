@@ -1,27 +1,49 @@
 @startuml
 'https://plantuml.com/class-diagram
 
-abstract class AbstractList
-abstract AbstractCollection
-interface List
-interface Collection
+class Character {
+    -char character
+    -CharacterProperties characterProperties
 
-List <|-- AbstractList
-Collection <|-- AbstractCollection
-
-Collection <|- List
-AbstractCollection <|- AbstractList
-AbstractList <|-- ArrayList
-
-class ArrayList {
-Object[] elementData
-size()
+    +void setCharacter(char character)
+    +void setCharacterProperty(CharacterProperties characterProperties)
+    +char getCharacter()
+    +String getFont()
+    +String getColor()
+    +int getSize()
 }
 
-enum TimeUnit {
-DAYS
-HOURS
-MINUTES
+class CharacterProperties {
+    -String font
+    -String color
+    -int size
+
+    +String getFont()
+    +String getColor()
+    +int getSize()
 }
+
+class CharacterPropertiesFactory {
+    -Map<String, CharacterProperties> flyweights
+
+    +CharacterProperties setAndRetrieveFlyweightCharacterProperties(String font, String color, int size)
+    +int sizeOfMap()
+}
+
+class Document {
+    -List<Character> characters
+    -CharacterPropertiesFactory propertiesFactory
+
+    +void addCharacter(char c, String font, String color, int size)
+    +void editCharacterProperties(int index, String font, String color, int size)
+    +void saveToFile(String filename)
+    +void loadFromFile(String filename)
+
+}
+
+Character --o CharacterProperties
+Document --o Character
+CharacterPropertiesFactory --o CharacterProperties
+Document --o CharacterPropertiesFactory
 
 @enduml
