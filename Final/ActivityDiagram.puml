@@ -1,0 +1,288 @@
+'Score
+@startuml
+start
+:Open app;
+
+if (Create new score?) then (yes)
+    :Open "New Score" dialog;
+    :Select instruments;
+    :Input title and composer;
+    :Select time signature;
+    :Select key signature;
+    :Select beats per minute;
+    :Select number of initial measures;
+    :Generate blank score;
+else (no)
+    :Select an existing score file;
+    :Load score file;
+endif
+stop
+@enduml
+
+'Note
+@startuml
+start
+:Click Note input toggle;
+
+if (Note input toggle ON?) then (Yes)
+    :Select duration (quarter, half, etc);
+    if (Hover over the measure?) then (yes)
+        :Preview where the note will be added;
+        :Click to place the note;
+        :Save note to the measure;
+    else (No)
+    endif
+else (No)
+     if (Click on an existing note?) then (Yes)
+        if (Drag?) then (Yes)
+            :Change pitch of note;
+            :Save changes;
+        (No) else if (Press backspace or delete key?) then (Yes)
+            :Remove the note from the measure;
+            :Save changes;
+        endif
+     else (No)
+     endif
+endif
+stop
+@enduml
+
+'Rest
+@startuml
+start
+:Click Rest toggle;
+
+if (Rest toggle ON?) then (Yes)
+    :Select duration (quarter, half, etc);
+    if (Hover over the measure?) then (yes)
+        :Preview where the rest will be added;
+        :Click to place the rest;
+        :Save rest to the measure;
+    else (No)
+    endif
+else (No)
+     if (Click on an existing rest?) then (Yes)
+        if (Drag?) then (Yes)
+            :Change vertical position of rest;
+            :Save changes;
+        else (No)
+        endif
+     else (No)
+     endif
+endif
+stop
+@enduml
+
+'Accidental
+@startuml
+start
+:Click on a note;
+:Select an accidental (sharp, flat, natural);
+:Apply accidental to selected note;
+:Save changes to the note;
+stop
+@enduml
+
+'Dynamics
+@startuml
+start
+:Click on dynamics dropdown menu;
+
+if (Drag and drop) then (yes)
+    :Drag dynamic symbol (e.g. forte, piano) onto the score;
+else (Click)
+    :Click on the note or measure;
+    :Select dynamic symbol;
+endif
+
+:Apply dynamic;
+:Adjust velocity of associated notes;
+:Save changes to the score;
+stop
+@enduml
+
+'Articulation
+@startuml
+start
+:Click on articulation dropdown menu;
+
+if (Drag and drop) then (yes)
+    :Drag articulation symbol (e.g. staccato, slur, tie, accent) onto the score;
+else (Click)
+    :Click on a single note, group of notes or measures;
+    :Select articulation symbol;
+endif
+
+:Apply articulation;
+:Adjust notes based on articulation;
+:Save changes to the score;
+stop
+@enduml
+
+'Add Instruments
+@startuml
+start
+:Click on "Instruments" tab;
+:Click on "Add" button;
+:Select Instrument Family;
+:Select Instrument by double clicking;
+:Click "OK";
+:Add Instrument to the score;
+:Save changes to the score;
+stop
+@enduml
+
+'Change Instruments
+@startuml
+start
+:Click on "Instruments" tab;
+:Click on "Setting" button for the specific instrument;
+:Click on "Replace Instrument";
+:Select Instrument Family;
+:Select Instrument by double clicking;
+:Click "OK";
+:Change instrument from the score;
+:Save changes to the score;
+stop
+@enduml
+
+'Export
+@startuml
+start
+:Click on "File" menu;
+:Select "Export" option;
+
+switch (Format Option)
+case (PDF)
+    :Click "Export";
+    :Select file location and name;
+    :Click "Save";
+    :Generate and save score as a PDF;
+case (MIDI)
+    :Click "Export";
+    :Select file location and name;
+    :Click "Save";
+    :Generate and save score as MIDI;
+case (MP3)
+    :Click "Export";
+    :Select file location and name;
+    :Click "Save";
+    :Generate and save score as MP3;
+case (WAV)
+    :Click "Export";
+    :Select file location and name;
+    :Click "Save";
+    :Generate and save score as WAV;
+case (PNG)
+    :Click "Export";
+    :Select file location and name;
+    :Click "Save";
+    :Generate and save score as PNG;
+endswitch
+stop
+@enduml
+
+'Playback the score
+@startuml
+start
+:Click on "Play" button;
+
+repeat :Start playback of the score;
+    while (Playback ongoing?) is (Yes)
+        fork
+            :Continue playing audio;
+        fork again
+            :Update note highlight progression;
+        fork again
+            :Update time displayed;
+        fork again
+            :Update current measure and beat number;
+        endfork
+    endwhile (No)
+repeat while (Loop playback is enabled?) is (Yes) not (No);
+stop
+@enduml
+
+'Add tempo to score
+@startuml
+start
+:Click on tempo dropdown menu;
+
+if (Drag and drop) then (yes)
+    :Drag tempo symbol (e.g. Moderato, Allegro) onto the score;
+else (Click)
+    :Click on the note or measure;
+    :Select tempo symbol;
+endif
+
+:Apply tempo;
+:Adjust speed of associated notes;
+:Save changes to the score;
+stop
+@enduml
+
+'Add/change key signature
+@startuml
+start
+:Click on key signatures dropdown menu;
+
+if (Drag and drop) then (yes)
+    :Drag key signature symbol onto the score;
+else (Click)
+    :Click on the note or measure;
+    :Select key signature symbol;
+endif
+
+:Apply key signature;
+:Adjust notes based on where the key signature changes;
+:Save changes to the score;
+stop
+@enduml
+
+'Add/change time signature
+@startuml
+start
+:Click on time signatures dropdown menu;
+
+if (Drag and drop) then (yes)
+    :Drag time signature symbol onto the score;
+else (Click)
+    :Click on the note or measure;
+    :Select time signature symbol;
+endif
+
+:Apply time signature;
+:Change the amount of beats each measure gets based on the new time signature;
+:Change what note the time signature count is based on;
+:Adjust notes based on where the time signature changes;
+:Save changes to the score;
+stop
+@enduml
+
+'Add measures
+@startuml
+start
+:Select where to add measures;
+:Click on "Add Measures" button;
+
+switch (Where to add measures?)
+case (Start of score)
+    :Input number of measures to add;
+    :Click "Ok";
+    :Add measures at the start of the score;
+case(End of score)
+    :Input number of measures to add;
+    :Click "Ok";
+    :Add measures at the end of the score;
+case(Specific location in the score)
+    if (Location selected?) then (Yes)
+    :Select specific location in the score;
+    :Insert new measures at the selected point;
+    else (No)
+    endif
+endswitch
+
+:Update measure count;
+:Save changes to the score;
+stop
+@enduml
