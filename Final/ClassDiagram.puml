@@ -1,0 +1,502 @@
+@startuml
+class Score {
+    -String title
+    -String composer
+    -int beatsPerMinute
+    -TimeSignature timeSignature
+    -KeySignature keySignature
+    -List<Instrument> instruments
+    -List<Measure> measures;
+
+    +addMeasure(Measure measure)
+    +removeMeasure(Measure measure)
+}
+
+class ScoreBuilder {
+    -String title
+    -String composer
+    -int beatsPerMinute
+    -TimeSignature timeSignature
+    -KeySignature keySignature
+    -List<Instrument> instruments
+    -List<Measure> measures;
+
+    +ScoreBuilder setTitle(String title)
+    +ScoreBuilder setComposer(String composer)
+    +ScoreBuilder setTimeSignature(TimeSignature timeSignature)
+    +ScoreBuilder setKeySignature(KeySignature keySignature)
+    +ScoreBuilder setNumberOfBeatsPerMeasure(int beatsPerMinute)
+    +ScoreBuilder addMeasure(Measure measure)
+    +ScoreBuilder addInstrument(Instrument instrument)
+    +Score build()
+}
+
+Score *-- ScoreBuilder
+Score *-- Measure
+
+class Measure {
+    -List<Note> notes
+    -List<Rest> rests
+    -List<Dynamic> dynamics
+    -List<Tempo> tempos
+    -List<Articulation> articulations
+
+    +void addNotes(Note note)
+    +void removeNotes(Note note)
+    +void addRests(Rest rest)
+    +void removeRests(Rest rest)
+    +void addArticulation(Articulation articulation)
+    +void removeArticulation(Articulation articulation)
+}
+
+Measure *-- Note
+Measure *-- Rest
+
+abstract class InstrumentFamily {
+    -String familyName
+
+    +String getFamilyName()
+}
+
+abstract class Instrument {
+    -String name
+
+    +String getName()
+}
+
+class Keyboard {
+    +List<Instrument> instruments
+}
+
+class Piano {
+    +void playPiano()
+}
+
+class Harpsichord {
+    +void playHarpsichord()
+}
+
+class WoodWinds {
+    +List<Instrument> instruments
+}
+
+class Flute {
+    +void playFlute()
+}
+
+class Oboe {
+    +void playOboe()
+}
+
+InstrumentFamily <|-- Keyboard
+InstrumentFamily <|-- WoodWinds
+Keyboard o-- Piano
+Keyboard o-- Harpsichord
+WoodWinds o-- Flute
+WoodWinds o-- Oboe
+Instrument <|-- Piano
+Instrument <|-- Harpsichord
+Instrument <|-- Flute
+Instrument <|-- Oboe
+
+Score *-- Instrument
+
+abstract class Note {
+    -String pitch
+    -float duration
+    -Position position
+
+    +String getPitch()
+    +void setPitch(String pitch)
+    +float getDuration()
+    +void setDuration(float duration)
+    +NoteFlyweight getFlyweight()
+}
+
+class NoteFlyweightFactory {
+    - Map<String, NoteFlyweight> flyweights
+
+    + NoteFlyweight getFlyweight(String pitch)
+}
+
+class NoteFlyweight {
+    -String pitch
+    -float duration
+
+    +String getPitch()
+    +void setPitch(String pitch)
+    +float getDuration()
+    +void setDuration(float duration)
+}
+
+Note --> NoteFlyweightFactory
+Note --> NoteFlyweight
+
+abstract class Rest {
+    -float duration
+    -Position position
+
+    +float getDuration()
+    +void setDuration(float duration)
+}
+
+class RestFlyweightFactory {
+    - Map<String, RestFlyweight> flyweights
+
+    + RestFlyweight getFlyweight(String pitch)
+}
+
+class RestFlyweight {
+    -String pitch
+    -float duration
+
+    +String getPitch()
+    +void setPitch(String pitch)
+    +float getDuration()
+    +void setDuration(float duration)
+}
+
+Rest --> RestFlyweightFactory
+Rest --> RestFlyweight
+
+class Quarter {
+    -float duration
+}
+
+class Half {
+    -float duration
+}
+
+class Whole {
+    -float duration
+}
+
+class Eighth {
+    -float duration
+}
+
+class Sixteenth {
+    -float duration
+}
+
+Note <|-- Quarter
+Note <|-- Half
+Note <|-- Whole
+Note <|-- Eighth
+Note <|-- Sixteenth
+
+Rest <|-- Quarter
+Rest <|-- Half
+Rest <|-- Whole
+Rest <|-- Eighth
+Rest <|-- Sixteenth
+
+class Position {
+    -int beatNumber
+    -int subdivision
+    -double timeInMeasure
+
+    +double getTimeInMeasure()
+    +int getBeatNumber()
+    +int getSubdivision()
+}
+
+Note --> Position
+
+abstract class NoteDecorator {
+    -Note note
+
+    +NoteDecorator(Note note)
+}
+
+abstract class AccidentalDecorator {
+    -Accidental accidental
+
+    +AccidentalDecorator(Note note)
+}
+
+abstract class ArticulationDecorator {
+    -Articulation articulation
+
+    +ArticulationDecorator(Note note)
+}
+
+abstract class DynamicDecorator {
+    -Dynamic dynamic
+
+    +DynamicDecorator(Note note)
+}
+
+abstract class AugmentationDotDecorator {
+    -AugmentationDot augmentationDot
+
+    +AugmentationDotDecorator(Note note)
+}
+
+NoteDecorator <|-- AccidentalDecorator
+NoteDecorator <|-- ArticulationDecorator
+NoteDecorator <|-- DynamicDecorator
+NoteDecorator <|-- AugmentationDotDecorator
+AugmentationDotDecorator <|-- AugmentationDot
+AccidentalDecorator <|-- Accidental
+Note o-- NoteDecorator
+
+abstract class RestDecorator {
+    -Rest rest
+
+    +float getDuration()
+    +void setDuration(float duration)
+}
+
+RestDecorator <|-- AugmentationDotDecorator
+Rest O-- RestDecorator
+
+class AugmentationDot {
+    -Note note
+
+    +void applyToNote(Note note)
+}
+
+abstract class Articulation {
+    -String name
+    -Image symbol
+
+    +String getName()
+    +Image getSymbol()
+    +void applyToNote(Note note)
+}
+
+class Staccato {
+    +void applyToNote(Note note)
+}
+
+class Slur {
+    +void applyToNote(Note note)
+}
+
+class Tie {
+    +void applyToNote(Note note)
+}
+
+class Accent {
+    +void applyToNote(Note note)
+}
+
+Articulation <|-- Staccato
+Articulation <|-- Slur
+Articulation <|-- Tie
+Articulation <|-- Accent
+
+abstract class Dynamic {
+    -String name
+    -float velocity
+
+    +String getName()
+    +int getVelocity()
+    +void applyToNote(Note note)
+}
+
+class Forte {
+    +void applyToNote(Note note)
+}
+
+class Piano {
+    +void applyToNote(Note note)
+}
+
+class Crescendo {
+    +void applyToNote(Note note)
+}
+
+class Decrescendo {
+    +void applyToNote(Note note)
+}
+
+Dynamic <|-- Forte
+Dynamic <|-- Piano
+Dynamic <|-- Crescendo
+Dynamic <|-- Decrescendo
+
+abstract class Tempo {
+    -String name
+    -int beatsPerMinute
+
+    +String getName()
+    +int getBeatsPerMinute()
+    +void applyToScore(Score score)
+}
+
+class Adagio {
+    +void applyToScore(Score score)
+}
+
+class Allegro {
+    +void applyToScore(Score score)
+}
+
+class Andante {
+    +void applyToScore(Score score)
+}
+
+class Presto {
+    +void applyToScore(Score score)
+}
+
+Tempo <|-- Adagio
+Tempo <|-- Allegro
+Tempo <|-- Andante
+Tempo <|-- Presto
+
+Measure *-- Articulation
+Measure *-- Dynamic
+Measure *-- Tempo
+
+abstract class Accidental {
+    -String name
+    -Image symbol
+
+    +String getName()
+    +Image getSymbol()
+    +void applyToNote(Note note)
+}
+
+class Sharp {
+    +void applyToNote(Note note)
+}
+
+class DoubleSharp {
+    +void applyToNote(Note note)
+}
+
+class Flat {
+    +void applyToNote(Note note)
+}
+
+class DoubleFlat {
+    +void applyToNote(Note note)
+}
+
+class Natural {
+    +void applyToNote(Note note)
+}
+
+Accidental <|-- Sharp
+Accidental <|-- DoubleSharp
+Accidental <|-- Flat
+Accidental <|-- DoubleFlat
+Accidental <|-- Natural
+
+abstract class KeySignature {
+    -String name
+    -int numberOfSharps
+    -int numberOfFlats
+    -Image symbol
+
+    +String getName()
+    +int getNumberOfSharps()
+    +int getNumberOfFlats()
+}
+
+class CMajor {
+    +String getName()
+    +int getNumberOfSharps()
+    +int getNumberOfFlats()
+    +void applyToScore(Score score)
+}
+
+class AbMajor {
+    +String getName()
+    +int getNumberOfSharps()
+    +int getNumberOfFlats()
+    +void applyToScore(Score score)
+}
+
+KeySignature <|-- CMajor
+KeySignature <|-- AbMajor
+
+Score o-- KeySignature
+
+abstract class TimeSignature {
+    -String timeSignature
+    -int numerator
+    -int denominator
+    -Image symbol
+
+    +int getNumerator()
+    +int getDenominator()
+    +String getTimeSignature()
+}
+
+class FourFour {
+    +void applyToScore(Score score)
+}
+
+class SixEighth {
+    +void applyToScore(Score score)
+}
+
+TimeSignature <|-- FourFour
+TimeSignature <|-- SixEighth
+
+Score o-- TimeSignature
+
+class Export {
+    +void exportToPDF(Score score)
+    +void exportToMIDI(Score score)
+    +void exportToMP3(Score score)
+    +void exportToWAV(Score score)
+    +void exportToPNG(Score score)
+}
+
+Score --> Export
+
+class ScorePlayer {
+    -Playback playback
+    -Score score
+
+    +ScorePlayer(Score score)
+}
+
+class Playback {
+    -PlaybackState currentState
+    -boolean isLoopEnabled
+
+    +void setState(PlaybackState currentState)
+    +void toggleLoop()
+    +void play()
+    +void pause()
+    +void rewind()
+}
+
+interface PlaybackState {
+    +void play()
+    +void pause()
+    +void rewind()
+}
+
+class PlayState {
+    +void play()
+    +void pause()
+    +void rewind()
+}
+
+class PauseState {
+    +void play()
+    +void pause()
+    +void rewind()
+}
+
+
+class RewindState {
+    +void play()
+    +void pause()
+    +void rewind()
+}
+
+ScorePlayer <-- Score
+Playback <-- ScorePlayer
+PlaybackState <-- Playback
+PlaybackState <|.. PlayState
+PlaybackState <|.. PauseState
+PlaybackState <|.. RewindState
+@enduml
